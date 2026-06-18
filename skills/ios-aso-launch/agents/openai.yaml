@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS ASO Launch"
+  short_description: "Keyword-first App Store launch ops"
+  default_prompt: "Use $ios-aso-launch to create App Store keywords, metadata, screenshots, and launch copy for an iOS app."

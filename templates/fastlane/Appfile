@@ -1,0 +1,4 @@
+app_identifier(ENV.fetch("APP_IDENTIFIER", "com.example.app"))
+apple_id(ENV.fetch("APPLE_ID", "developer@example.com"))
+team_id(ENV.fetch("TEAM_ID", "TEAMID1234"))
+

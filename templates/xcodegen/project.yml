@@ -1,0 +1,41 @@
+name: App
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: "$(DEVELOPMENT_TEAM)"
+    CODE_SIGN_STYLE: Automatic
+targets:
+  App:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/App
+    resources:
+      - Sources/App/Assets.xcassets
+      - Sources/App/PrivacyInfo.xcprivacy
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: "$(APP_IDENTIFIER)"
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        INFOPLIST_FILE: Sources/App/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: Sources/App/Info.plist
+      properties:
+        CFBundleDisplayName: App
+        UILaunchScreen: {}
+        ITSAppUsesNonExemptEncryption: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+  AppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/AppTests
+    dependencies:
+      - target: App
+

@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+*.p8
+*.cer
+*.mobileprovision
+*.xcarchive
+*.ipa
+DerivedData/
+build/
+*.xcresult
+Config/Secrets.xcconfig
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+

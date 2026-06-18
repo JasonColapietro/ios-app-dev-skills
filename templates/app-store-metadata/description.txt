@@ -1,0 +1,13 @@
+Get fast answers and save the useful ones.
+
+Example App turns a simple prompt into a structured result you can keep, revisit, and act on.
+
+WHAT YOU CAN DO
+- Capture an input quickly
+- Generate a structured result
+- Save history
+- Revisit favorites
+
+WHY EXAMPLE APP
+It focuses on one job and keeps the output easy to use.
+

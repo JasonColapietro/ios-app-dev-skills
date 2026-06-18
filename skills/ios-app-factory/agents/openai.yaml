@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS App Factory"
+  short_description: "One-prompt iOS app pipeline"
+  default_prompt: "Use $ios-app-factory to plan or build a native iOS app from keyword through ship gate."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS SwiftUI Product"
+  short_description: "SwiftUI app architecture and QA"
+  default_prompt: "Use $ios-swiftui-product to design or review native SwiftUI product architecture, StoreKit flows, and app QA."

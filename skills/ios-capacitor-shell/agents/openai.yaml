@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS Capacitor Shell"
+  short_description: "Capacitor iOS shell maintenance"
+  default_prompt: "Use $ios-capacitor-shell to inspect, fix, or release a Capacitor iOS shell around a live web app."

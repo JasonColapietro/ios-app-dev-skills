@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS App Store Release"
+  short_description: "Build, upload, and submit iOS apps"
+  default_prompt: "Use $ios-app-store-release to prepare, archive, upload, and submit an iOS app through App Store Connect safely."
