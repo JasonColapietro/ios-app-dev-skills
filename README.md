@@ -1,5 +1,14 @@
 # Turn Any Website Into an iOS App
 
+<p align="center">
+  <img alt="iOS App Store ready website to app workflow" src="https://img.shields.io/badge/iOS-App_Store_ready-111111?logo=apple&logoColor=white">
+  <img alt="SwiftUI app development skills" src="https://img.shields.io/badge/SwiftUI-Native_apps-0A84FF?logo=swift&logoColor=white">
+  <img alt="Capacitor website to iOS shell" src="https://img.shields.io/badge/Capacitor-Web_to_app-119EFF?logo=capacitor&logoColor=white">
+  <img alt="Claude Code slash commands" src="https://img.shields.io/badge/Claude_Code-/ios_tools-6B4EFF">
+  <img alt="Codex AI coding agent skills" src="https://img.shields.io/badge/Codex-agent_skills-111111">
+  <img alt="MIT licensed free iOS app development skills" src="https://img.shields.io/badge/license-MIT-green">
+</p>
+
 Free public skills and slash commands from Jason Colapietro and Suede for taking
 any website, web app, dashboard, marketplace, PWA, or content surface and
 turning it into an App Store-ready iOS app with AI coding agents.
@@ -20,9 +29,18 @@ It intentionally does **not** include secrets, signing material, private API
 keys, private repo paths, Apple account identifiers, or App Store Connect
 credentials. Bring your own Apple Developer account and environment variables.
 
+<p align="center">
+  <img width="49%" alt="Stock photo of mobile app interface design for website to iOS app conversion" src="https://images.unsplash.com/photo-1558655146-6c222b05fce4?auto=format&fit=crop&w=1200&q=80">
+  <img width="49%" alt="Stock photo of iPad and app files for iOS app development workflow" src="https://images.unsplash.com/photo-1550529791-9799c4abb4ad?auto=format&fit=crop&w=1200&q=80">
+</p>
+
+<p align="center">
+  <sub>Stock photos from Unsplash: Daniel Korpai and Balazs Ketyi. Used under the Unsplash License.</sub>
+</p>
+
 ## Start Here
 
-Star it, fork it, clone it, and point it at your site:
+Star it. Fork it. Clone it. Point it at your site. Turn the site into an app.
 
 ```bash
 git clone https://github.com/JasonColapietro/ios-app-dev-skills.git
@@ -47,6 +65,11 @@ The fast path:
 If you have a website, you have the start of an app. This repo is the free
 Suede/Jason toolbelt for turning that surface into a real iPhone product.
 
+Need the short version for GitHub search? This is an AI agent skill pack for
+website to iOS app conversion, App Store-ready web-to-app workflows, SwiftUI app
+development, Capacitor iOS shells, App Store Optimization, iOS screenshots, App
+Review prep, and App Store Connect release gates.
+
 ## Website To App Workflow
 
 Use this pack when you want to turn a site into a real iOS app instead of a thin
@@ -65,6 +88,25 @@ bookmark wrapper:
 
 The headline use case is simple: point Claude or Codex at a website and use
 these free skills to turn it into an App Store-quality app path.
+
+## SEO Tags
+
+Primary search intent:
+
+- turn website into iOS app
+- website to app
+- web to iOS app
+- App Store-ready iOS app
+- AI app development skills
+
+GitHub topics and repo tags:
+
+```text
+site-to-ios, website-to-app, ios-app-development, mobile-app-development,
+app-store-optimization, app-review, app-development, capacitor, swiftui,
+fastlane, pwa, ai-agents, claude-code, codex, aso, screenshots, app-store,
+app-store-connect, skills, ios
+```
 
 ## Suede And Jason Proof
 
