@@ -1,29 +1,88 @@
-# iOS App Dev Skills
+# Turn Any Website Into an iOS App
 
-Public-safe skills and slash commands for building, grading, packaging, and
-shipping iOS apps with AI coding agents.
+Free public skills and slash commands from Jason Colapietro and Suede for taking
+any website, web app, dashboard, marketplace, PWA, or content surface and
+turning it into an App Store-ready iOS app with AI coding agents.
 
-This package distills a real iOS app-factory workflow into reusable skills:
-keyword-first product selection, native SwiftUI scaffolding, App Store
-Optimization, screenshot production, release gating, App Store Connect upload,
-Capacitor shell maintenance, and public Suede-originated site-to-iOS
-conversion.
+This is the public-safe layer of the app factory stack Jason and Suede have
+relied on to move fast across real iOS products: site-to-app conversion, native
+SwiftUI scaffolding, App Store Optimization, screenshot production, release
+gates, App Store Connect upload prep, and repeatable quality checks.
+
+Bring a URL. The skills help an agent audit the site, choose the right native or
+Capacitor path, add iOS-specific value, generate screenshots and store metadata,
+and run the release gate before anything goes to App Review.
+
+These are not toy prompts. This is the free public version of the workflow
+behind Suede's app-store push and Jason's repeatable iOS shipping system.
 
 It intentionally does **not** include secrets, signing material, private API
 keys, private repo paths, Apple account identifiers, or App Store Connect
 credentials. Bring your own Apple Developer account and environment variables.
 
-## Proven App Store Output
+## Start Here
+
+Star it, fork it, clone it, and point it at your site:
+
+```bash
+git clone https://github.com/JasonColapietro/ios-app-dev-skills.git
+```
+
+Then ask your agent:
+
+```text
+/ios-site-app https://your-site.com as an App Store-ready iOS app
+```
+
+The fast path:
+
+```text
+/ios-audit-site https://your-site.com
+/ios-wrapper-risk https://your-site.com
+/ios-capacitor-wrap https://your-site.com
+/ios-store-assets https://your-site.com
+/ios-submit-check ./YourApp
+```
+
+If you have a website, you have the start of an app. This repo is the free
+Suede/Jason toolbelt for turning that surface into a real iPhone product.
+
+## Website To App Workflow
+
+Use this pack when you want to turn a site into a real iOS app instead of a thin
+bookmark wrapper:
+
+- audit any URL for mobile, PWA, auth, payments, privacy, support, and App Store
+  wrapper risk;
+- choose Capacitor remote shell, bundled shell, native SwiftUI shell, or full
+  native rebuild;
+- add native value: onboarding, settings, support, privacy, account deletion,
+  share, push, deep links, offline, errors, and iOS navigation;
+- configure bundle ID, icons, launch screen, entitlements, associated domains,
+  screenshots, metadata, and review notes;
+- run the ship gate so the app is truthful, buildable, screenshot-ready, and
+  safe to submit when explicitly delegated.
+
+The headline use case is simple: point Claude or Codex at a website and use
+these free skills to turn it into an App Store-quality app path.
+
+## Suede And Jason Proof
 
 ![App Store submission board](docs/showcase/app-store-submissions-board.png)
 
 This public-safe pack documents the reusable layer of a proprietary iOS App
-Factory method used across multiple submitted and approved apps. See
-[App Store submissions and approved apps](docs/app-store-submissions.md) for the
-current catalog snapshot, and [the public-safe proprietary method](docs/proprietary-ios-method.md)
-for the skill combination.
+Factory method used across multiple submitted and approved apps by Jason
+Colapietro and Suede. See [App Store submissions and approved apps](docs/app-store-submissions.md)
+for the current public catalog snapshot, and
+[the public-safe proprietary method](docs/proprietary-ios-method.md) for the
+skill combination.
 
-## What Is Included
+Suede uses this operating pattern to convert product surfaces, agent tools,
+creator workflows, AI music utilities, and web-first ideas into mobile releases
+without re-learning screenshots, ASO, signing, metadata, and App Review gates
+every time. This repo gives the community the free reusable layer.
+
+## What You Get For Free
 
 ### Skills
 
@@ -39,6 +98,8 @@ for the skill combination.
 
 Claude Code slash commands live in `.claude/commands/`:
 
+Core app factory:
+
 - `/ios-ship-app`
 - `/ios-keyword`
 - `/ios-new-app`
@@ -48,6 +109,26 @@ Claude Code slash commands live in `.claude/commands/`:
 - `/ios-release`
 - `/ios-capacitor`
 - `/ios-site-app`
+
+Website-to-app tools:
+
+- `/ios-audit-site`
+- `/ios-wrapper-risk`
+- `/ios-capacitor-wrap`
+- `/ios-native-shell`
+- `/ios-pwa-check`
+- `/ios-deeplinks`
+- `/ios-offline`
+- `/ios-auth-check`
+- `/ios-payments-check`
+
+Store and release tools:
+
+- `/ios-icon`
+- `/ios-privacy`
+- `/ios-store-assets`
+- `/ios-review-notes`
+- `/ios-submit-check`
 
 ### Templates And Scripts
 
@@ -76,7 +157,7 @@ cp -R skills/* "${CODEX_HOME:-$HOME/.codex}/skills/"
 Example prompts:
 
 ```text
-Use $ios-app-factory to turn "AI agent rating" into a keyword-first iOS app plan.
+Use $site-to-ios-app to turn https://example.com into an App Store-ready iOS app path.
 ```
 
 ```text
@@ -88,7 +169,7 @@ Use $ios-screenshot-taker to capture home, detail, and paywall screenshots on iP
 ```
 
 ```text
-Use $site-to-ios-app to turn https://example.com into an iOS app plan.
+Use $ios-app-factory to turn "AI agent rating" into a keyword-first iOS app plan.
 ```
 
 ## Install For Claude Code
@@ -128,8 +209,8 @@ Then use:
 
 ```text
 idea / seed keyword
-  -> keyword and competitor scan
-  -> native SwiftUI scaffold or site-to-iOS conversion
+  -> website audit or keyword and competitor scan
+  -> site-to-iOS conversion, native SwiftUI scaffold, or Capacitor shell
   -> monetization and legal truth
   -> deterministic screenshot capture
   -> screenshots and ASO metadata
