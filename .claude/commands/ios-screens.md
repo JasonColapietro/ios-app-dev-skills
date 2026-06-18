@@ -6,8 +6,9 @@ description: Produce or review App Store screenshots for an iOS app.
 
 Input: `$ARGUMENTS` - app path, simulator, or screenshot brief.
 
-Use the `ios-aso-launch` skill. If a Suede/AGENTIX-style frame is requested,
-also use any installed Suede screenshot-frame skill.
+Use the `ios-aso-launch` skill. Use `ios-screenshot-taker` first when raw
+simulator captures do not already exist. If a Suede/AGENTIX-style frame is
+requested, also use any installed Suede screenshot-frame skill.
 
 ## Flow
 
@@ -18,4 +19,3 @@ also use any installed Suede screenshot-frame skill.
 5. Verify dimensions, legibility, and feature truth.
 
 Output screenshot paths, device classes covered, missing shots, and upload order.
-

@@ -13,12 +13,23 @@ It intentionally does **not** include secrets, signing material, private API
 keys, private repo paths, Apple account identifiers, or App Store Connect
 credentials. Bring your own Apple Developer account and environment variables.
 
+## Proven App Store Output
+
+![App Store submission board](docs/showcase/app-store-submissions-board.png)
+
+This public-safe pack documents the reusable layer of a proprietary iOS App
+Factory method used across multiple submitted and approved apps. See
+[App Store submissions and approved apps](docs/app-store-submissions.md) for the
+current catalog snapshot, and [the public-safe proprietary method](docs/proprietary-ios-method.md)
+for the skill combination.
+
 ## What Is Included
 
 ### Skills
 
 - `ios-app-factory` - one-prompt iOS app pipeline from keyword to ship gate.
 - `ios-swiftui-product` - native SwiftUI product architecture and QA.
+- `ios-screenshot-taker` - deterministic simulator capture for named app states.
 - `ios-aso-launch` - App Store keyword, metadata, screenshots, and launch ops.
 - `ios-app-store-release` - archive, upload, TestFlight, and review submission.
 - `ios-capacitor-shell` - Capacitor shell inspection, sync, and release logic.
@@ -31,6 +42,7 @@ Claude Code slash commands live in `.claude/commands/`:
 - `/ios-ship-app`
 - `/ios-keyword`
 - `/ios-new-app`
+- `/ios-shot`
 - `/ios-screens`
 - `/ios-grade`
 - `/ios-release`
@@ -45,6 +57,7 @@ Claude Code slash commands live in `.claude/commands/`:
 - `templates/release/` - export options and reviewer notes template.
 - `templates/site-to-ios/` - reusable conversion plan.
 - `scripts/ios_preflight.sh` - local Xcode/Fastlane/env preflight.
+- `scripts/take_ios_screenshots.sh` - simulator build/install/launch screenshot capture.
 - `scripts/audit_site_for_ios.py` - static site-to-iOS readiness audit.
 - `scripts/validate_app_store_metadata.py` - App Store char-limit checks.
 - `scripts/validate_skill_pack.py` - skill/slash-command sanity checks.
@@ -68,6 +81,10 @@ Use $ios-app-factory to turn "AI agent rating" into a keyword-first iOS app plan
 
 ```text
 Use $ios-app-store-release to preflight this Xcode project for App Store upload.
+```
+
+```text
+Use $ios-screenshot-taker to capture home, detail, and paywall screenshots on iPhone 15 Pro Max.
 ```
 
 ```text
@@ -114,6 +131,7 @@ idea / seed keyword
   -> keyword and competitor scan
   -> native SwiftUI scaffold or site-to-iOS conversion
   -> monetization and legal truth
+  -> deterministic screenshot capture
   -> screenshots and ASO metadata
   -> scorecard gate
   -> archive, upload, TestFlight, submit
@@ -134,6 +152,7 @@ The default ship gate is:
 ```bash
 python3 scripts/validate_skill_pack.py .
 python3 scripts/validate_app_store_metadata.py templates/app-store-metadata
+bash -n scripts/take_ios_screenshots.sh
 bash scripts/ios_preflight.sh
 python3 scripts/audit_site_for_ios.py https://example.com
 ```

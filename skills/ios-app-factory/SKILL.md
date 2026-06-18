@@ -39,6 +39,7 @@ This skill pairs with the repository slash commands:
 - `/ios-ship-app` - run the whole pipeline.
 - `/ios-keyword` - keyword and competitor scan.
 - `/ios-new-app` - scaffold or plan the native app.
+- `/ios-shot` - deterministic simulator screenshot capture.
 - `/ios-screens` - screenshot capture and marketing frame.
 - `/ios-grade` - ship-gate scorecard.
 - `/ios-release` - archive/upload/submit checklist.
@@ -54,4 +55,3 @@ Do not call an app ship-ready until:
 - privacy/legal answers match actual SDK behavior,
 - no secrets or signing assets are committed,
 - the user has confirmed any outward submission action.
-

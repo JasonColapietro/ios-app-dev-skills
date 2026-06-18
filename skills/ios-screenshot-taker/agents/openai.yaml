@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS Screenshot Taker"
+  short_description: "Deterministic simulator screenshot capture"
+  default_prompt: "Use $ios-screenshot-taker to build an iOS app on a simulator and capture named App Store-ready raw screenshots for each product state."
