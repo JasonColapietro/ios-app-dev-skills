@@ -6,7 +6,8 @@ shipping iOS apps with AI coding agents.
 This package distills a real iOS app-factory workflow into reusable skills:
 keyword-first product selection, native SwiftUI scaffolding, App Store
 Optimization, screenshot production, release gating, App Store Connect upload,
-and Capacitor shell maintenance.
+Capacitor shell maintenance, and public Suede-originated site-to-iOS
+conversion.
 
 It intentionally does **not** include secrets, signing material, private API
 keys, private repo paths, Apple account identifiers, or App Store Connect
@@ -21,6 +22,7 @@ credentials. Bring your own Apple Developer account and environment variables.
 - `ios-aso-launch` - App Store keyword, metadata, screenshots, and launch ops.
 - `ios-app-store-release` - archive, upload, TestFlight, and review submission.
 - `ios-capacitor-shell` - Capacitor shell inspection, sync, and release logic.
+- `site-to-ios-app` - turn any site into an App Store-quality iOS app path.
 
 ### Slash Commands
 
@@ -33,6 +35,7 @@ Claude Code slash commands live in `.claude/commands/`:
 - `/ios-grade`
 - `/ios-release`
 - `/ios-capacitor`
+- `/ios-site-app`
 
 ### Templates And Scripts
 
@@ -40,7 +43,9 @@ Claude Code slash commands live in `.claude/commands/`:
 - `templates/xcodegen/` - minimal XcodeGen project scaffold.
 - `templates/app-store-metadata/` - deliver-compatible metadata files.
 - `templates/release/` - export options and reviewer notes template.
+- `templates/site-to-ios/` - reusable conversion plan.
 - `scripts/ios_preflight.sh` - local Xcode/Fastlane/env preflight.
+- `scripts/audit_site_for_ios.py` - static site-to-iOS readiness audit.
 - `scripts/validate_app_store_metadata.py` - App Store char-limit checks.
 - `scripts/validate_skill_pack.py` - skill/slash-command sanity checks.
 - `scripts/install.sh` - copy skills and commands into local agent folders.
@@ -65,6 +70,10 @@ Use $ios-app-factory to turn "AI agent rating" into a keyword-first iOS app plan
 Use $ios-app-store-release to preflight this Xcode project for App Store upload.
 ```
 
+```text
+Use $site-to-ios-app to turn https://example.com into an iOS app plan.
+```
+
 ## Install For Claude Code
 
 Project-level install:
@@ -84,6 +93,10 @@ Then use:
 /ios-ship-app ai habit tracker for guitar practice
 ```
 
+```text
+/ios-site-app https://example.com as an App Store-ready iOS app
+```
+
 ## Public Safety
 
 - Do not commit `.p8`, `.xcconfig` secrets, `.env`, certificates, provisioning
@@ -99,7 +112,7 @@ Then use:
 ```text
 idea / seed keyword
   -> keyword and competitor scan
-  -> native SwiftUI scaffold
+  -> native SwiftUI scaffold or site-to-iOS conversion
   -> monetization and legal truth
   -> screenshots and ASO metadata
   -> scorecard gate
@@ -122,9 +135,9 @@ The default ship gate is:
 python3 scripts/validate_skill_pack.py .
 python3 scripts/validate_app_store_metadata.py templates/app-store-metadata
 bash scripts/ios_preflight.sh
+python3 scripts/audit_site_for_ios.py https://example.com
 ```
 
 ## License
 
 MIT.
-
