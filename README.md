@@ -9,6 +9,8 @@
   <img alt="MIT licensed free iOS app development skills" src="https://img.shields.io/badge/license-MIT-green">
 </p>
 
+> **By [Jason Colapietro](https://suedeai.ai/founder) / [Suede Labs AI](https://suedeai.ai)** — creator ownership infrastructure for the AI media era.
+
 Free public skills and slash commands from Jason Colapietro and Suede for taking
 any website, web app, dashboard, marketplace, PWA, or content surface and
 turning it into an App Store-ready iOS app with AI coding agents.
