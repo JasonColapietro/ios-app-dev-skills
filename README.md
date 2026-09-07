@@ -31,15 +31,6 @@ It intentionally does **not** include secrets, signing material, private API
 keys, private repo paths, Apple account identifiers, or App Store Connect
 credentials. Bring your own Apple Developer account and environment variables.
 
-<p align="center">
-  <img width="49%" alt="Stock photo of mobile app interface design for website to iOS app conversion" src="https://images.unsplash.com/photo-1558655146-6c222b05fce4?auto=format&fit=crop&w=1200&q=80">
-  <img width="49%" alt="Stock photo of iPad and app files for iOS app development workflow" src="https://images.unsplash.com/photo-1550529791-9799c4abb4ad?auto=format&fit=crop&w=1200&q=80">
-</p>
-
-<p align="center">
-  <sub>Stock photos from Unsplash: Daniel Korpai and Balazs Ketyi. Used under the Unsplash License.</sub>
-</p>
-
 ## Start Here
 
 Star it. Fork it. Clone it. Point it at your site. Turn the site into an app.
