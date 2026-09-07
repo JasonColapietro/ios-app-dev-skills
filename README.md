@@ -31,6 +31,15 @@ It intentionally does **not** include secrets, signing material, private API
 keys, private repo paths, Apple account identifiers, or App Store Connect
 credentials. Bring your own Apple Developer account and environment variables.
 
+<p align="center">
+  <img width="42%" alt="App Store screenshot for StoryBeam Kids captioned Give kids a safe player, showing the app home screen with the parent promise of no open search and no surprise next-up" src="docs/showcase/app-store-screenshot-safe-audio.png">
+  <img width="42%" alt="App Store screenshot for StoryBeam Kids captioned Know what comes next, showing a selected story card tagged StoryBeam Approved for ages 3-8" src="docs/showcase/app-store-screenshot-parent-review.png">
+</p>
+
+<p align="center">
+  <sub>Real App Store screenshots from <a href="https://storybeamkids.com">StoryBeam Kids</a>, an app shipped with this workflow.</sub>
+</p>
+
 ## Start Here
 
 Star it. Fork it. Clone it. Point it at your site. Turn the site into an app.
